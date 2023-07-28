@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive manubar create</title>
+  <link rel="shortcut icon" href="./images.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              'bg-color':'#F85559',
+            },
+          }
+        }
+      }
+    </script>
+</head>
+<body>
+<header>
+  <nav>
+    <div class="container mx-auto py-3 md:py-5 lg:my-12 navbar w-full h-[110px] lg:bg-bg-color p-6 rounded-full">
+      <div class="flex  flex-row-reverse justify-center md:flex-row lg:items-center lg:flex-row lg:justify-between w-full h-auto px-5 md:gap-10">
+        <div class="flex-1 flex justify-end md:justify-center md:flex-wrap lg:items-center lg:justify-start">
+          <div class="dropdown ">
+            <label tabindex="0" class="btn btn-ghost md:hidden lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </label>
+            <ul tabindex="0" class="menu menu-sm dropdown-content  mt-3 z-[1] p-2 right-14 relative shadow bg-base-100 rounded-box w-52 flex flex-col items-center ">
+              <li class="hover:bg-slate-400 hover:w-full items-center rounded"><a>Home</a></li>
+              <li class="hover:bg-slate-400 hover:w-full items-center rounded"><a>About us</a>
+              <li class="hover:bg-slate-400 hover:w-full items-center rounded"><a>Contact Us</a></li>
+              <li class="hover:bg-slate-400 hover:w-full items-center rounded"><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center hidden md:flex lg:flex">
+            <ul class="menu menu-horizontal px-1 md:text-black lg:text-xl md:text-sm lg:text-white">
+              <li><a>Home</a></li>
+              <li><a>About us</a></li>
+              <li><a>Contact Us</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+        </div>
+      <div class="flex-1 md:hidden  lg:block">
+       <div class="flex items-start lg:items-center lg:justify-center">
+       <div class="flex gap-3 items-center">
+        <img src="./logo.png" alt="">
+        <h2 class="text-black lg:text-white text-xl lg:text-4xl">Fruits Brust</h2>
+       </div>
+       </div>
+      </div>
+      <div class="navbar-end flex-1 bg-white rounded-full  px-5 lg:py-1 hidden md:block lg:block lg:bg-white md:shadow">
+        <div class="  flex items-center justify-between">
+          <input type="email" placeholder="search here..." class="input w-full max-w-xs text-xl focus:outline-none "/>
+          <i class="fa-solid fa-magnifying-glass text-2xl"></i>
+        </div>
+      </div>
+      </div>
+    </div>
+  </nav>
+</header>
+</body>
+</html>
