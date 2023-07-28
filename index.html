@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>responsive manubar create</title>
+    <!-- font lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
   <link rel="shortcut icon" href="./images.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,10 +25,15 @@
         }
       }
     </script>
+    <style>
+      .font-lato{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
 </head>
 <body>
 <header>
-  <nav>
+  <nav class="font-lato">
     <div class="container mx-auto md:my-5 py-3 md:py-5 lg:my-12 navbar w-full h-[110px] lg:bg-bg-color md:bg-gray-300 p-6 rounded-full">
       <div class="flex  flex-row-reverse justify-center md:flex-row lg:items-center lg:flex-row lg:justify-between w-full h-auto px-5 md:gap-10">
         <div class="flex-1 flex justify-end md:justify-center md:flex-wrap lg:items-center lg:justify-start">
@@ -32,14 +42,14 @@
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </label>
             <ul tabindex="0" class="menu menu-sm dropdown-content  mt-3 z-[1] p-2 right-14 relative shadow bg-base-100 rounded-box w-52 flex flex-col items-center ">
-              <li class="hover:bg-slate-400 hover:w-full items-center rounded"><a>Home</a></li>
-              <li class="hover:bg-slate-400 hover:w-full items-center rounded"><a>About us</a>
-              <li class="hover:bg-slate-400 hover:w-full items-center rounded"><a>Contact Us</a></li>
-              <li class="hover:bg-slate-400 hover:w-full items-center rounded"><a>All Fruits</a></li>
+              <li class="hover:bg-slate-400 hover:w-full items-center rounded text-base font-semibold"><a>Home</a></li>
+              <li class="hover:bg-slate-400 hover:w-full items-center rounded text-base font-semibold"><a>About us</a>
+              <li class="hover:bg-slate-400 hover:w-full items-center rounded text-base font-semibold"><a>Contact Us</a></li>
+              <li class="hover:bg-slate-400 hover:w-full items-center rounded text-base font-semibold"><a>All Fruits</a></li>
             </ul>
           </div>
           <div class="navbar-center hidden md:flex lg:flex">
-            <ul class="menu menu-horizontal px-1 md:text-black lg:text-xl md:text-sm lg:text-white">
+            <ul class="menu menu-horizontal px-1 md:text-black text-base font-semibold lg:text-xl md:text-sm lg:text-white">
               <li><a>Home</a></li>
               <li><a>About us</a></li>
               <li><a>Contact Us</a></li>
@@ -51,7 +61,7 @@
        <div class="flex items-start lg:items-center lg:justify-center">
        <div class="flex gap-3 items-center">
         <img src="./logo.png" alt="">
-        <h2 class="text-black lg:text-white text-xl lg:text-4xl">Fruits Brust</h2>
+        <h2 class="text-black lg:text-white font-extrabold text-xl lg:text-4xl">Fruits Brust</h2>
        </div>
        </div>
       </div>
